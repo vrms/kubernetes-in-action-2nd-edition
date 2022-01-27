@@ -9,7 +9,7 @@ spec:
   - name: network-check
     image: luksa/network-connectivity-checker:0.1
     args:
-    - 8.8.8.8   # the IP that the network-connectivity-checker should ping
+    - 8.8.8.8   # the IP that the network-connectivity-checker should ping. Make sure this can be reached from a pod in your cluster.
   containers:
   - name: kiada
     image: luksa/kiada:0.2
